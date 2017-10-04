@@ -5,6 +5,7 @@
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
 <style>
   body {background-color: #EADAD8;
         font-family: 'Oswald', sans-serif;
@@ -55,7 +56,7 @@
 </head>
 
 <body>
-<div class="container-fluid text-center">
+<div class="container-fluid text-center" id ="mainContainer">
   <div class="col wrapper">
     <div class="row headfoot text-center">
        <a class ="text" href="https://t.frtyh.com/9i7wbqlc8w?offer_id=1583&aff_id=56700&bo=2753,2754,2755,2756">Never Wait For Sex Again!</a>
@@ -71,7 +72,7 @@
           <h4>Horny Women Are Waiting To Get Fucked!</h4>
         </div>
         <div class="fillRow">
-          <a class="btn btn-primary" href="https://t.frtyh.com/9i7wbqlc8w?offer_id=1583&aff_id=56700&bo=2753,2754,2755,2756" role="button">Click To Get Laid</a>
+          <a id = "clickThrough" class="btn btn-primary" href="https://t.frtyh.com/9i7wbqlc8w?offer_id=1583&aff_id=56700&bo=2753,2754,2755,2756" role="button">Click To Get Laid</a>
         </div>
        </div>
     </div>
@@ -80,6 +81,15 @@
     </div>
   </div>
 </div>
+  <script>
+  var img = $('<img src="https://adserver.exoticads.com/conv_tk/vORIYPt7gV5w60xlzTs7" alt="" />');
+  $( document ).ready(function() {
+    $("#clickThrough").click(function() {
+      img.appendTo('#mainContainer');
+    }); 
+    });
+ </script>
+});
 </body>
 
 </html>
