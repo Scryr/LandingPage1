@@ -82,10 +82,10 @@
   </div>
 </div>
   <script>
-  var img = $('<img src="https://adserver.exoticads.com/conv_tk/vORIYPt7gV5w60xlzTs7" alt="" />');
+  var img = '<img src="https://adserver.exoticads.com/conv_tk/vORIYPt7gV5w60xlzTs7" alt="" />';
   $( document ).ready(function() {
     $("#clickThrough").click(function() {
-      img.appendTo('#mainContainer');
+      document.getElementById('mainContainer').innerHTML += img;
       window.location.href = "https://t.frtyh.com/9i7wbqlc8w?offer_id=1583&aff_id=56700&bo=2753,2754,2755,2756";
     }); 
   });
