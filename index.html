@@ -94,18 +94,19 @@
   </div>
 </div>
   <script>
-    var top = '<img src="https://adserver.exoticads.com/conv_tk/geYQNpIMcuIpBccccJK1NddD7" alt="" />';       
-    var btn = '<img src="https://adserver.exoticads.com/conv_tk/vORIYPt7gV5w60xlzTs7" alt="" />';   
-    var bot = '<img src="https://adserver.exoticads.com/conv_tk/HG8wjxb3gRWmLMERgaQJTb" alt="" />';
-    function top(){
-      document.getElementById('mainContainer').innerHTML += top;
-    }
-    function button(){
-      document.getElementById('mainContainer').innerHTML += btn;
-    }
-    function bottom(){
-      document.getElementById('mainContainer').innerHTML += bot;
-    }
+    $( document ).ready(function() {
+      var top = '<img src="https://adserver.exoticads.com/conv_tk/geYQNpIMcuIpBccccJK1NddD7" alt="" />';       
+      var btn = '<img src="https://adserver.exoticads.com/conv_tk/vORIYPt7gV5w60xlzTs7" alt="" />';   
+      var bot = '<img src="https://adserver.exoticads.com/conv_tk/HG8wjxb3gRWmLMERgaQJTb" alt="" />';
+      function top(){
+        document.getElementById('mainContainer').innerHTML += top;
+      }
+      function button(){
+        document.getElementById('mainContainer').innerHTML += btn;
+      }
+      function bottom(){
+        document.getElementById('mainContainer').innerHTML += bot;
+      }
     });
  </script>
 </body>
