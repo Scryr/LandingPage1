@@ -82,7 +82,7 @@
             <h4>Horny Women Are Waiting To Get Fucked!</h4>
           </div>
           <div class="fillRow">
-            <a id = "clickThrough" class="btn btn-primary" href="https://t.frtyh.com/9i7wbqlc8w?offer_id=1583&aff_id=56700&bo=2753,2754,2755,2756" role="button">Click To Get Laid</a>
+            <a id = "clickThrough" class="btn btn-primary" href="#" role="button">Click To Get Laid</a>
           </div>
          </div>
       </div>
@@ -98,11 +98,14 @@
       var top = '<img src="https://adserver.exoticads.com/conv_tk/geYQNpIMcuIpBccccJK1NddD7" alt="" />';       
       var btn = '<img src="https://adserver.exoticads.com/conv_tk/vORIYPt7gV5w60xlzTs7" alt="" />';   
       var bot = '<img src="https://adserver.exoticads.com/conv_tk/HG8wjxb3gRWmLMERgaQJTb" alt="" />';
+      var offers = ["https://t.frtyh.com/4wyqvgec00?offer_id=1555&aff_id=56700",
+                    "https://t.frtyh.com/9i7wbqlc8w?offer_id=1583&aff_id=56700&bo=2753,2754,2755,2756"];
       $("#top").click(function(){
         document.getElementById('mainContainer').innerHTML += top;
       });
       $("#clickThrough").click(function(){
         document.getElementById('mainContainer').innerHTML += btn;
+        window.location.href = offers[Math.floor(Math.random() * (offers.length + 1))];
       });
       $("#bottom").click(function(){
         document.getElementById('mainContainer').innerHTML += bot;
