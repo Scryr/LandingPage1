@@ -96,10 +96,17 @@
 </div>
   <script>
     
+    var topTracker = '<img src="https://adserver.exoticads.com/conv_tk/geYQNpIMcuIpBccccJK1NddD7" alt="" />';       
+    var btnTracker = '<img src="https://adserver.exoticads.com/conv_tk/vORIYPt7gV5w60xlzTs7" alt="" />';   
+    var botTracker = '<img src="https://adserver.exoticads.com/conv_tk/HG8wjxb3gRWmLMERgaQJTb" alt="" />';
+    
     var ads = [{banner : 'banners/EA_banner728x90.webp', link : "https://exoticads.com/aff/in/mrps/5Eu5K/?track=default"},
                {banner : 'banners/CB_banner1_728x90.webp', link : "https://chaturbate.com/affiliates/in/?track=default&tour=ZmU7&campaign=uPN7R"},
                {banner : 'banners/CB_banner2_728x90.webp', link : "https://chaturbate.com/affiliates/in/?track=default&tour=ZmU7&campaign=uPN7R"},
                {banner : 'banners/CR_banner768x90.webp', link : "http://t.irtya.com/w791i32idc?offer_id=4194&aff_id=56700"}];
+    
+    var offers = ["https://t.frtyh.com/4wyqvgec00?offer_id=1555&aff_id=56700",
+                  "https://t.frtyh.com/9i7wbqlc8w?offer_id=1583&aff_id=56700&bo=2753,2754,2755,2756"];
     
     var topIndex = Math.floor(Math.random() * ads.length);
     $("#top").attr("href", ads[topIndex].link);
@@ -113,22 +120,16 @@
     $("#bottomAd").attr("src", ads[botIndex].banner);
     
     $( document ).ready(function() {
-      var top = '<img src="https://adserver.exoticads.com/conv_tk/geYQNpIMcuIpBccccJK1NddD7" alt="" />';       
-      var btn = '<img src="https://adserver.exoticads.com/conv_tk/vORIYPt7gV5w60xlzTs7" alt="" />';   
-      var bot = '<img src="https://adserver.exoticads.com/conv_tk/HG8wjxb3gRWmLMERgaQJTb" alt="" />';
-
       //affiliate program{banner : 'banners/CBds_banner2_728x90.webp', link : "https://chaturbate.com/affiliates/in/?track=default&tour=9O7D&campaign=uPN7R"}
-      var offers = ["https://t.frtyh.com/4wyqvgec00?offer_id=1555&aff_id=56700",
-                    "https://t.frtyh.com/9i7wbqlc8w?offer_id=1583&aff_id=56700&bo=2753,2754,2755,2756"];
       $("#clickThrough").attr("href", offers[Math.floor(Math.random() * offers.length)]);
       $("#top").click(function(){
-        document.getElementById('mainContainer').innerHTML += top;
+        document.getElementById('mainContainer').innerHTML += topTracker;
       });
       $("#clickThrough").click(function(){
-        document.getElementById('mainContainer').innerHTML += btn;
+        document.getElementById('mainContainer').innerHTML += btnTracker;
       });
       $("#bottom").click(function(){
-        document.getElementById('mainContainer').innerHTML += bot;
+        document.getElementById('mainContainer').innerHTML += botTracker;
       });
     });
  </script>
