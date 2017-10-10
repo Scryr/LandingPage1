@@ -105,6 +105,9 @@
     $("#topAd").attr("src", ads[topIndex].banner);
     
     var botIndex =  Math.floor(Math.random() * ads.length);
+    while(botIndex === topIndex)
+      botIndex = Math.floor(Math.random() * ads.length);
+    
     $("#bottom").attr("href", ads[botIndex].link);
     $("#bottomAd").attr("src", ads[botIndex].banner);
     
