@@ -124,14 +124,14 @@
     
     $( document ).ready(function() {
       //affiliate program{banner : 'banners/CBds_banner2_728x90.webp', link : "https://chaturbate.com/affiliates/in/?track=default&tour=9O7D&campaign=uPN7R"}
-      $("#clickThrough").attr("href", offers[offerIndex].link);
+      $("#clickThrough").attr("href", #);
       $("#top").click(function(){
         document.getElementById('mainContainer').innerHTML += topTracker + ads[topIndex].tracker;
       });
       $("#clickThrough").click(function(){
         document.getElementById('mainContainer').innerHTML += btnTracker + offers[offerIndex].tracker;
         window.open('https://chaturbate.com/affiliates/in/?track=default&tour=3Mc9&campaign=uPN7R&redirect_to_room=-welcomepage-', '_blank').blur();
-        window.focus();
+        window.open(offers[offerIndex].link, '_blank').focus();
       });
       $("#bottom").click(function(){
         document.getElementById('mainContainer').innerHTML += botTracker + ads[botIndex].tracker;
