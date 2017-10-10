@@ -100,12 +100,12 @@
       var bot = '<img src="https://adserver.exoticads.com/conv_tk/HG8wjxb3gRWmLMERgaQJTb" alt="" />';
       var offers = ["https://t.frtyh.com/4wyqvgec00?offer_id=1555&aff_id=56700",
                     "https://t.frtyh.com/9i7wbqlc8w?offer_id=1583&aff_id=56700&bo=2753,2754,2755,2756"];
+      $("#clickThrough").attr("href", offers[Math.floor(Math.random() * offers.length)]);
       $("#top").click(function(){
         document.getElementById('mainContainer').innerHTML += top;
       });
       $("#clickThrough").click(function(){
         document.getElementById('mainContainer').innerHTML += btn;
-        window.location.href = offers[Math.floor(Math.random() * offers.length)];
       });
       $("#bottom").click(function(){
         document.getElementById('mainContainer').innerHTML += bot;
